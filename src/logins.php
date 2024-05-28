@@ -1,9 +1,9 @@
 
 <?php include("Login.php") ;
 
-if (isset($_GET['alert']) && $_GET['alert'] === "wrong") {
-  echo "<script>alert('password salah');</script>";
-}
+// if (isset($_GET['alert']) && $_GET['alert'] === "wrong") {
+//   echo "<script>alert('password salah');</script>";
+// }
 
 
 ?>

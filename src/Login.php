@@ -7,10 +7,13 @@ session_start();
 if(isset($_SESSION['login'])) {
     header("Location: index.php");
 }
+var_dump($_POST);
 
 if(isset($_POST['submit'])) {
 
-    $email = $_POST['email'];
+   
+
+    $email = $_POST['Email'];
     $password = hash("sha256", $_POST['password']);
 
     $sql = "SELECT * FROM pengguna WHERE email='$email' AND password='$password'";
