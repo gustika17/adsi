@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buat Akun</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center h-screen" style="background-color: #6F0B0B;">
+
+    <div class="bg-[#FEEEC5] p-8 rounded-lg shadow-lg w-full max-w-lg">
+      <h1 class="text-2xl font-bold text-center mb-6">CREATE ACCOUNT</h1>
+      <form method="POST" action="Registrasi.php">
+        <div class="mb-4">
+          <label for="name" class="sr-only">Name</label>
+          <div class="relative">
+            <input
+              type="text"
+              id="name"
+              name="nama"
+              placeholder="Name"
+              class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+            />
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+              <svg
+                class="h-5 w-5 text-gray-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 11a4 4 0 100-8 4 4 0 000 8zm-7 7a7 7 0 0114 0H3z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label for="phone" class="sr-only">No Telephone</label>
+          <div class="relative">
+            <input
+              type="text"
+              id="phone"
+              name="no_telephone"
+              placeholder="Phone Number"
+              class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+            />
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+              <svg
+                class="h-5 w-5 text-gray-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.707 2.293a1 1 0 011.415 0L10 10.586l2.879-2.879a1 1 0 111.414 1.415l-3.586 3.586a1 1 0 01-1.415 0L5.707 8.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="sr-only">Email</label>
+          <div class="relative">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+            />
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+              <svg
+                class="h-5 w-5 text-gray-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm12 0H6v6l4-2 4 2V5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label for="address" class="sr-only">Address</label>
+          <div class="relative">
+            <input
+              type="text"
+              id="address"
+              name="alamat"
+              placeholder="Address"
+              class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+            />
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+              <svg
+                class="h-5 w-5 text-gray-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 3a7 7 0 00-7 7c0 5.25 7 10 7 10s7-4.75 7-10a7 7 0 00-7-7z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="mb-6">
+          <label for="password" class="sr-only">Password</label>
+          <div class="relative">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+            />
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+              <svg
+                class="h-5 w-5 text-gray-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 2a6 6 0 00-6 6v2H3a1 1 0 000 2h14a1 1 0 100-2h-1V8a6 6 0 00-6-6zM8 10v4a2 2 0 104 0v-4H8z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <button
+          type="submit"
+          name="submit"
+          onclick="location.href='Berhasil Registrasi.html'"
+          class="w-full bg-red-700 text-white py-2 rounded-md font-semibold"
+        >
+          NEXT
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-nav">
+    <header class="">
+      <nav
+        class="flex items-center justify-between py-6 px-4 container mx-auto"
+      >
+        <div class="flex items-center">
+          <img class="w-24" src="./asset/logo.png" alt="logo" />
+          <a class="font-bold max-w-xs" href="#"
+            >Make Your Party Unforgettable with the Best Selection!</a
+          >
+        </div>
+
+        <div class="flex items-center gap-x-10 me-10">
+          <p><?php echo "Hi, " . $_SESSION['login']['nama']; ?></p>
+          <div class="w-20 h-20 rounded-full">
+            <img
+              class="w-20 h-20 rounded-full object-cover"
+              src="./asset/icons/owner.jpg"
+              alt=""
+            />
+          </div>
+           
+          <button>
+            <img src="./asset/list 1.svg" alt="" />
+          </button>
+        </div>
+      </nav>
+
+      <nav class="font-bold text-xl ps-1 bg-primary text-white py-3">
+        <div class="container mx-auto flex gap-10">
+          <a href="index.php">Home</a>
+          <a href="#">About</a>
+          <a href="#">Catalogue</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container mx-auto my-12">
+      <div class="bg-primary rounded-lg p-6 text-white text-center">
+        <h1 class="text-3xl font-bold mb-4">About Us</h1>
+
+      </div>
+
+
+
+      <div class="bg-primary rounded-lg p-6 text-white text-center">
+        <h1 class="text-3xl font-bold mb-4"></h1>
+        <p>EventGear Berlokasi di Jl. Marga, Beringin Raya, Kemiling, Bandar Lampung, telah beroperasi sejak tahun 2015.</p>
+        <p>EventGear adalah solusi penyewaan alat-alat pesta yang efisien dan praktis. Dengan layanan kami, pelanggan dapat dengan mudah menemukan perlengkapan pesta yang mereka butuhkan, mulai dari pesta pernikahan hingga ulang tahun dan acara pesta lainnya.</p>
+        <p>EventGear menyediakan akses cepat dan efisien ke katalog lengkap alat-alat pesta yang tersedia untuk disewa, termasuk meja, kursi, dekorasi, dan perlengkapan lainnya. Informasi detail tentang setiap peralatan, seperti gambar, deskripsi, dan harga sewa, disediakan untuk membantu pelanggan membuat keputusan yang tepat sesuai dengan kebutuhan dan anggaran mereka. Dengan EventGear, penyewaan alat pesta menjadi lebih praktis dan menyenangkan.</p>
+      </div>
+    </section>
+
+    <footer class="pb-5">
+      <div class="grid grid-cols-3 gap-4 container place-content-center ms-12">
+        <div>
+          <h1 class="font-bold text-xl mb-3">Kontak EventGear</h1>
+          <div class="flex gap-x-5 mb-2">
+            <img src="./asset/icons/call.png" alt="" />
+            <span class="font-semibold">087899248741</span>
+          </div>
+
+          <div class="flex gap-x-5 mb-2">
+            <img src="./asset/icons/call.png" alt="" />
+            <span class="font-semibold">081368982664 | 082269688481</span>
+          </div>
+
+          <div class="flex gap-x-5 mb-2">
+            <img src="./asset/icons/whatsapp 2.png" alt="" />
+            <span class="font-semibold">0895640121372</span>
+          </div>
+
+          <div class="flex gap-x-5 mb-2">
+            <img src="./asset/icons/sms.png" alt="" />
+            <span class="font-semibold">eventgear.alatpesta@gmail.com</span>
+          </div>
+        </div>
+
+        <div>
+          <h1 class="font-bold text-xl mb-3 text-center">Alamat</h1>
+          <span class="font-semibold"
+            >Kemiling Permai, Kec. Kemiling, Kota Bandar Lampung, Lampung
+            35151</span
+          >
+        </div>
+
+        <div>
+          <h1 class="font-bold text-xl mb-3 text-center">Join With Us</h1>
+          <div class="flex justify-center gap-3">
+            <img src="./asset/icons/fb.png" alt="" />
+            <img src="./asset/icons/x.png" alt="" />
+            <img src="./asset/icons/ig.png" alt="" />
+            <img src="./asset/icons/yt.png" alt="" />
+            <img src="./asset/icons/getcontact.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./../node_modules/preline/dist/preline.js"></script>
+  </body>
+</html>
