@@ -23,6 +23,7 @@ if (!isset($_SESSION['login'])) {
       <a href="pemilik.php">Start Selling</a>
       <a href="logout.php">Log Out</a>
     </div>
+    <div class="overlay" id="overlay"></div>
 
     <section class="w-96 mx-auto my-10 py-6">
     <div class="bg-primary rounded-full py-6 text-white text-center mx-0">
