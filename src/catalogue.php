@@ -13,56 +13,6 @@ if (!isset($_SESSION['login'])) {
     <title>EventGear Alat Pesta</title>
     <link rel="stylesheet" href="output.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #730000;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #FFF3CD;
-            color: rgb(0, 0, 0);
-            padding: 10px 20px;
-        }
-        header img {
-            width: 50px;
-            vertical-align: middle;
-        }
-        header h1 {
-            margin-right: 40%;
-            justify-content: left;
-            font-size: 18px;
-        }
-
-        header .profile {
-            display: flex;
-            align-items: center;
-        }
-        header .profile img {
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            margin-left: 10px;
-        }
-        nav {
-            margin-right: 70%;
-            display: flex;
-            justify-content: center;
-            background-color: #730000;
-        }
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #730000;
-        }
         .content {
             display: flex;
             justify-content: center;
@@ -96,24 +46,7 @@ if (!isset($_SESSION['login'])) {
             border-radius: 8px;
             font-size: 20px;
         }
-        footer {
-            background-color: #FFF3CD;
-            color: black;
-            padding: 20px;
-            text-align: center;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        footer .contact, footer .address, footer .social {
-            margin: 10px;
-            flex: 1;
-            min-width: 200px;
-        }
-        footer .social img {
-            width: 30px;
-            margin: 0 5px;
-        }
+
     </style>
 </head>
 <body class="bg-nav">
