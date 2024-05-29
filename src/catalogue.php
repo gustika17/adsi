@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EventGear Alat Pesta</title>
+    <link rel="stylesheet" href="output.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -35,7 +36,8 @@
         }
         header .profile img {
             border-radius: 50%;
-            width: 40px;
+            width: 50px;
+            height: 50px;
             margin-left: 10px;
         }
         nav {
@@ -108,19 +110,22 @@
     </style>
 </head>
 <body>
+
     <header>
         <img src="./asset/logo.png" alt="EventGear Logo">
         <h1>Make Your Party Unforgettable with the Best Selection!</h1>
         <div class="profile">
             <span>Hi, Ibu Owner Loli Cafe!</span>
-            <img src="./asset/profile.png" alt="Profile Picture">
+            <img src="./asset/icons/owner.jpg" alt="Profile Picture">
         </div>
     </header>
+
     <nav>
         <a href="#">Home</a>
         <a href="#">About us</a>
         <a href="#">Catalogue</a>
     </nav>
+
     <section class="content">
         <div class="row">
             <div class="card">
@@ -151,29 +156,7 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="contact">
-            <p><strong>Kontak EventGear</strong></p>
-            <p>087899248741</p>
-            <p>081368982664 | 082269688481</p>
-            <p>0895640121372</p>
-            <p>Email: eventgear.alatpesta@gmail.com</p>
-        </div>
-        <div class="address">
-            <p><strong>Alamat</strong></p>
-            <p>Kemiling Permai, Kec. Kemiling, Kota Bandar Lampung, Lampung 35151</p>
-        </div>
-        <div class="social">
-            <p><strong>Join With Us</strong></p>
-            <img src="./asset/facebook.png" alt="Facebook">
-            <img src="./asset/twitter.png" alt="Twitter">
-            <img src="./asset/instagram.png" alt="Instagram">
-            <img src="./asset/youtube.png" alt="YouTube">
-            <img src="./asset/whatsapp.png" alt="WhatsApp">
-        </div>
-        <div style="width: 100%; text-align: center; margin-top: 10px;">
-            <p>&copy; 2024 — EventGear Alat Pesta. All rights reserved.</p>
-        </div>
-    </footer>
+    <?php include "layout/footer.php"; ?>
+
 </body>
 </html>

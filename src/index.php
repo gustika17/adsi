@@ -81,41 +81,7 @@ if (!isset($_SESSION['login'])) {
 </head>
   <body class="bg-nav">
     
-    <header class="">
-      <nav
-        class="flex items-center justify-between py-6 px-4 container mx-auto"
-      >
-        <div class="flex items-center">
-          <img class="w-24" src="./asset/logo.png" alt="logo" />
-          <a class="font-bold max-w-xs" href="#"
-            >Make Your Party Unforgettable with the Best Selection!</a
-          >
-        </div>
-
-        <div class="flex items-center gap-x-10 me-10">
-        <p><?php echo "Hi, " . $_SESSION['login']['nama']; ?></p>
-          <div class="w-20 h-20 rounded-full">
-            <img
-              class="w-20 h-20 rounded-full object-cover"
-              src="./asset/icons/owner.jpg"
-              alt=""
-            />
-          </div>
-          <img 
-               class="toggle-btn" id="toggle-btn"
-              src="./asset/list 1.svg" alt="" 
-              />
-        </div>
-      </nav>
-
-      <nav class="font-bold text-xl ps-6 bg-primary text-white py-3">
-        <div class="container mx-auto flex gap-10">
-          <a href="#">Home</a>
-          <a href="About.html">About</a>
-          <a href="#">Catalogue</a>
-        </div>
-      </nav>
-    </header>
+    <?php include "layout/header.php" ?>
      <!-- Sidebar -->
      <div class="sidebar" id="sidebar">
       <a href="#">Profile</a>
@@ -263,62 +229,7 @@ if (!isset($_SESSION['login'])) {
       </div>
     </section>
 
-    <footer class="pb-5">
-      <div class="grid grid-cols-3 gap-4 container place-content-center ms-12">
-        <div>
-          <h1 class="font-bold text-xl mb-3">Kontak EventGear</h1>
-          <div class="flex gap-x-5 mb-2">
-            <img src="./asset/icons/call.png" alt="" />
-            <span class="font-semibold">087899248741</span>
-          </div>
-
-          <div class="flex gap-x-5 mb-2">
-            <img src="./asset/icons/call.png" alt="" />
-            <span class="font-semibold">081368982664 | 082269688481</span>
-          </div>
-
-          <div class="flex gap-x-5 mb-2">
-            <img src="./asset/icons/whatsapp 2.png" alt="" />
-            <span class="font-semibold">0895640121372</span>
-          </div>
-
-          <div class="flex gap-x-5 mb-2">
-            <img src="./asset/icons/sms.png" alt="" />
-            <span class="font-semibold">eventgear.alatpesta@gmail.com</span>
-          </div>
-        </div>
-
-        <div>
-          <h1 class="font-bold text-xl mb-3 text-center">Alamat</h1>
-          <span class="font-semibold"
-            >Kemiling Permai, Kec. Kemiling, Kota Bandar Lampung, Lampung
-            35151</span
-          >
-        </div>
-
-        <div>
-          <h1 class="font-bold text-xl mb-3 text-center">Join With Us</h1>
-          <div class="flex justify-center gap-3">
-          <a href=" https://www.facebook.com/satriosktiardka.satriosktiardka" target="_blank">
-    <img src="./asset/icons/fb.png" alt="fb">
-</a>
-<a href="https://x.com/unila_base?s=21" target="_blank">
-    <img src="./asset/icons/x.png" alt="x">
-</a>
-            <a href="https://www.instagram.com/gstkdw_?igsh=Znp5NnZzMnI5N282&utm_source=qr" target="_blank">
-    <img src="./asset/icons/ig.png" alt="Instagram">
-</a>
-
-<a href=" https://youtube.com/@safiraaulia2584?si=a_-ut5eXtf0mVKZf" target="_blank">
-    <img src="./asset/icons/yt.png" alt="Yt">
-</a>
-<a href=" http://wa.me/87899258741" target="_blank">
-    <img src="./asset/icons/getcontact.png" alt="wa">
-</a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <?php include "layout/footer.php"; ?>
    
 
     <script src="./../node_modules/preline/dist/preline.js"></script>
