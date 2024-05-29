@@ -190,7 +190,7 @@ if (!isset($_SESSION['login'])) {
       <div class="mt-10 pb-20 flex justify-center gap-x-10 px-12">
         <div class="w-1/2 bg-primary rounded-3xl px-4 py-16">
           <h1 class="text-white font-bold text-center text-2xl mb-5">
-            Sewa Alat Catering
+          Rent catering equipment
           </h1>
           <img
             class="mx-auto"
@@ -201,15 +201,15 @@ if (!isset($_SESSION['login'])) {
           <p
             class="text-white text-center mt-10 max-w-[26.75rem] text-xl mx-auto"
           >
-            EventGear Alat Catering sebagai pusat penyewaan alat catering
-            terbesar dan paling lengkap di wilayah Kecamatan Kemiling, Kota
-            Bandar Lampung. Dengan berbagai pilihan peralatan catering
-            berkualitas tinggi dan harga yang terjangkau.
+            EventGear Catering Equipment as a catering equipment rental center
+            The largest and most complete in the Kemiling District area, Kota
+            Bandar Lampung. With a wide choice of catering equipment
+            high quality and affordable price.
           </p>
         </div>
         <div class="w-1/2 bg-primary rounded-3xl px-4 py-16">
           <h1 class="text-white font-bold text-center text-2xl mb-5">
-            Dekorasi
+            Decoration
           </h1>
           <img
             class="mx-auto"
@@ -220,10 +220,10 @@ if (!isset($_SESSION['login'])) {
           <p
             class="text-white text-center mt-10 max-w-[26.75rem] text-xl mx-auto"
           >
-            EventGear Dekorasi, menjadi penyedia layanan unggulan dengan paket
-            dekorasi lengkap, termasuk beragam pernak-pernik klasik yang
-            memukau. Dengan pilihan yang melimpah, EventGear siap mempercantik
-            setiap acara Anda dengan sentuhan mewah dan berkelas.
+            EventGear Decoration, is a superior service provider with packages
+            complete decoration, including various classic knick-knacks
+            stunning. With an abundance of choices, EventGear is ready to beautify
+            every event you have with a touch of luxury and class.
           </p>
         </div>
       </div>
