@@ -7,8 +7,9 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <?php include "layout/header.php" ?>
+
   <body class="bg-nav">
+  <?php include "layout/header.php" ?>
     <div class="sidebar" id="sidebar">
       <a href="#">Profile</a>
       <a href="Setting.html">Setting</a>
