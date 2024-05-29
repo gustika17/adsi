@@ -63,29 +63,29 @@ if (!isset($_SESSION['login'])) {
         <div class="row">
             <div class="card">
                 <img src="./asset/catering.png" alt="Paket Catering">
-                <h2>Paket Catering</h2>
+                <h2>Catering Packages</h2>
             </div>
             <div class="card">
                 <img src="./asset/wedding.png" alt="Paket Wedding">
-                <h2>Paket Wedding</h2>
+                <h2>Wedding Packages</h2>
             </div>
             <div class="card">
                 <img src="./asset/engagement.png" alt="Paket Engagement">
-                <h2>Paket Engagement</h2>
+                <h2> Engagement Packages</h2>
             </div>
         </div>
         <div class="row">
             <div class="card">
                 <img src="./asset/birthday.png" alt="Paket Birthday">
-                <h2>Paket Birthday</h2>
+                <h2> Birthday Packages</h2>
             </div>
             <div class="card">
                 <img src="./asset/aqiqah.png" alt="Paket Aqiqah">
-                <h2>Paket Aqiqah</h2>
+                <h2>Aqiqah Packages </h2>
             </div>
             <div class="card">
                 <img src="./asset/khitanan.png" alt="Paket Khitanan">
-                <h2>Paket Khitanan</h2>
+                <h2>Circumcision Packages </h2>
             </div>
         </div>
     </section>
