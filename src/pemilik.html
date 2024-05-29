@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Store Information</title>
     <link rel="stylesheet" href="pemilik.css" />
+    <link rel="stylesheet" href="output.css" />
   </head>
   <body>
     <div class="container">
@@ -50,7 +51,7 @@
             />
           </div>
           <div class="form-buttons">
-            <button type="submit">NEXT</button>
+            <button id="next" type="submit">NEXT</button>
             <button type="button" onclick="location.href='index.php'">
               CANCEL
             </button>
@@ -61,5 +62,14 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const next = document.getElementById("next");
+
+      next.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.location.href = "catalogue.php";
+      });
+    </script>
   </body>
 </html>
