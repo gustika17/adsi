@@ -22,7 +22,7 @@ if (!isset($_SESSION['login'])) {
         <div class="bg-custom-red text-white w-1/4 p-6 flex flex-col items-center">
             <img src="./asset/icons/owner.jpg" alt="" class="w-20 h-20 mb-2 rounded-full object-cover">
             <div class="text-center">
-            <p><?php echo $_SESSION['login']['nama']."!"; ?></p>
+            <p class="font-light"><?php echo $_SESSION['login']['nama']." !"; ?></p>
                 <p class="text-lg mt-2">Welcome !</p>
             </div>
             <button class="mt-auto py-2 px-6 w-24 bg-beige-300 text-custom-red font-semibold rounded-full"
