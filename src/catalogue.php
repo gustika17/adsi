@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['login'])) {
+  header("Location: logins.php");
+  exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -110,7 +117,7 @@
     </style>
 </head>
 <body class="bg-nav">
-<?php include "layout/header.php" ?>
+    <?php include "layout/header.php" ?>
     <div class="sidebar" id="sidebar">
       <a href="#">Profile</a>
       <a href="Setting.html">Setting</a>
