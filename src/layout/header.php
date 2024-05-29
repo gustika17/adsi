@@ -27,8 +27,8 @@
 
       <nav class="font-bold text-xl ps-6 bg-primary text-white py-3">
         <div class="container mx-auto flex gap-10">
-          <a href="#">Home</a>
-          <a href="About.html">About</a>
+          <a href="index.php">Home</a>
+          <a href="About.php">About</a>
           <a href="#">Catalogue</a>
         </div>
       </nav>
