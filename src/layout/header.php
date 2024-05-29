@@ -29,7 +29,7 @@
         <div class="container mx-auto flex gap-10">
           <a href="index.php">Home</a>
           <a href="About.php">About</a>
-          <a href="#">Catalogue</a>
+          <a href="catalogue.php">Catalogue</a>
         </div>
       </nav>
     </header>
