@@ -1,4 +1,4 @@
-<footer class="pb-5">
+<footer class="pb-5  w-full">
       <div class="grid grid-cols-3 gap-4 container place-content-center ms-12">
         <div>
           <h1 class="font-bold text-xl mb-3 text-left">Kontak EventGear</h1>
