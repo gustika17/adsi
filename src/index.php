@@ -85,7 +85,7 @@ if (!isset($_SESSION['login'])) {
      <!-- Sidebar -->
      <div class="sidebar" id="sidebar">
       <a href="#">Profile</a>
-      <a href="Setting.html">Setting</a>
+      <a href="Setting.php">Setting</a>
       <a href="pemilik.php">Start Selling</a>
       <a href="logout.php">Log Out</a>
     </div>
