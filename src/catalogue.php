@@ -121,7 +121,7 @@
     </header>
 
     <nav>
-        <a href="#">Home</a>
+        <a href="index.php">Home</a>
         <a href="#">About us</a>
         <a href="#">Catalogue</a>
     </nav>
