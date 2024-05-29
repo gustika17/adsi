@@ -46,6 +46,15 @@ if (!isset($_SESSION['login'])) {
             border-radius: 8px;
             font-size: 20px;
         }
+        .bg-primary {
+            background-color: #8B0000; /* Custom primary color */
+        }
+        .text-custom-red {
+            color: #8B0000; /* Custom text color */
+        }
+        .bg-beige-200 {
+            background-color: #F5F5DC; /* Custom beige background color */
+        }
 
     </style>
 </head>
@@ -58,8 +67,9 @@ if (!isset($_SESSION['login'])) {
       <a href="logout.php">Log Out</a>
     </div>
     <div class="overlay" id="overlay"></div>
-
-    <section class="bg-beige-200 container mx-auto my-20 py-6">
+<body class="bg-beige-200">
+    
+    <section class="container mx-auto my-20 py-6">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <div class="bg-white p-4 rounded-lg text-center">
                 <img src="./asset/catering.png" alt="Paket Catering" class="rounded-lg w-full h-48 object-cover mb-2">
@@ -87,6 +97,7 @@ if (!isset($_SESSION['login'])) {
             </div>
         </div>
     </section>
+    </body>
     <?php include "layout/footer.php"; ?>
     <style>
       .sidebar {
