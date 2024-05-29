@@ -46,15 +46,6 @@ if (!isset($_SESSION['login'])) {
             border-radius: 8px;
             font-size: 20px;
         }
-        .bg-primary {
-            background-color: #8B0000; /* Custom primary color */
-        }
-        .text-custom-red {
-            color: #8B0000; /* Custom text color */
-        }
-        .bg-beige-200 {
-            background-color: #F5F5DC; /* Custom beige background color */
-        }
 
     </style>
 </head>
@@ -67,37 +58,37 @@ if (!isset($_SESSION['login'])) {
       <a href="logout.php">Log Out</a>
     </div>
     <div class="overlay" id="overlay"></div>
-<body class="bg-beige-200">
-    
-    <section class="container mx-auto my-20 py-6">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <div class="bg-white p-4 rounded-lg text-center">
-                <img src="./asset/catering.png" alt="Paket Catering" class="rounded-lg w-full h-48 object-cover mb-2">
-                <h2 class="text-custom-red font-semibold">Paket Catering</h2>
+
+    <section class="content">
+        <div class="row">
+            <div class="card">
+                <img src="./asset/catering.png" alt="Paket Catering">
+                <h2>Paket Catering</h2>
             </div>
-            <div class="bg-white p-4 rounded-lg text-center">
-                <img src="./asset/wedding.png" alt="Paket Wedding" class="rounded-lg w-full h-48 object-cover mb-2">
-                <h2 class="text-custom-red font-semibold">Paket Wedding</h2>
+            <div class="card">
+                <img src="./asset/wedding.png" alt="Paket Wedding">
+                <h2>Paket Wedding</h2>
             </div>
-            <div class="bg-white p-4 rounded-lg text-center">
-                <img src="./asset/engagement.png" alt="Paket Engagement" class="rounded-lg w-full h-48 object-cover mb-2">
-                <h2 class="text-custom-red font-semibold">Paket Engagement</h2>
+            <div class="card">
+                <img src="./asset/engagement.png" alt="Paket Engagement">
+                <h2>Paket Engagement</h2>
             </div>
-            <div class="bg-white p-4 rounded-lg text-center">
-                <img src="./asset/birthday.png" alt="Paket Birthday" class="rounded-lg w-full h-48 object-cover mb-2">
-                <h2 class="text-custom-red font-semibold">Paket Birthday</h2>
+        </div>
+        <div class="row">
+            <div class="card">
+                <img src="./asset/birthday.png" alt="Paket Birthday">
+                <h2>Paket Birthday</h2>
             </div>
-            <div class="bg-white p-4 rounded-lg text-center">
-                <img src="./asset/aqiqah.png" alt="Paket Aqiqah" class="rounded-lg w-full h-48 object-cover mb-2">
-                <h2 class="text-custom-red font-semibold">Paket Aqiqah</h2>
+            <div class="card">
+                <img src="./asset/aqiqah.png" alt="Paket Aqiqah">
+                <h2>Paket Aqiqah</h2>
             </div>
-            <div class="bg-white p-4 rounded-lg text-center">
-                <img src="./asset/khitanan.png" alt="Paket Khitanan" class="rounded-lg w-full h-48 object-cover mb-2">
-                <h2 class="text-custom-red font-semibold">Paket Khitanan</h2>
+            <div class="card">
+                <img src="./asset/khitanan.png" alt="Paket Khitanan">
+                <h2>Paket Khitanan</h2>
             </div>
         </div>
     </section>
-    </body>
     <?php include "layout/footer.php"; ?>
     <style>
       .sidebar {
