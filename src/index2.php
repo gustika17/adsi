@@ -97,7 +97,7 @@ if (!isset($_SESSION['login'])) {
      <div class="sidebar" id="sidebar">
       <a href="#">Profile</a>
       <a href="#">Setting</a>
-      <a href="#">Start Selling</a>
+      <a href="pemilik.php">Start Selling</a>
       <a href="logout.php">Log Out</a>
     </div>
     <section>
