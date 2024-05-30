@@ -1,7 +1,7 @@
 <footer class="pb-5  w-full">
       <div class="grid grid-cols-3 gap-4 container place-content-center ms-12">
         <div>
-          <h1 class="font-bold text-xl mb-3 text-left">Kontak EventGear</h1>
+          <h1 class="font-bold text-xl mb-3 text-left"> EventGear Contact</h1>
           <div class="flex gap-x-5 mb-2">
             <img src="./asset/icons/call.png" alt="" />
             <span class="font-semibold">087899248741</span>
@@ -24,7 +24,7 @@
         </div>
 
         <div>
-          <h1 class="font-bold text-xl mb-3 text-center">Alamat</h1>
+          <h1 class="font-bold text-xl mb-3 text-center">ADDRESS</h1>
           <span class="font-semibold"
             >Kemiling Permai, Kec. Kemiling, Kota Bandar Lampung, Lampung
             35151</span
