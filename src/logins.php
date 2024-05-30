@@ -97,7 +97,7 @@
             </div>
           </form>
           <p class="italic underline text-center font-light">
-            <a href="Registrasi.html">Don't Have account?</a>
+            <a href="Registrasi.html">Don't Have Account?</a>
           </p>
         </div>
         <!-- End Input -->
