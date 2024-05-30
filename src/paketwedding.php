@@ -141,9 +141,9 @@ if (!isset($_SESSION['login'])) {
             </div>
           </div>
           <p
-            class="absolute z-50 text-white top-52 left-1/2 text-5xl font-semibold -translate-x-1/2"
+            class="absolute z-50 text-white top-52 left-1/2 text-5xl font-bold -translate-x-1/2"
           >
-          Catering packages
+          CATERING PACKAGES
           </p>
         </div>
 

@@ -128,10 +128,7 @@
             <img src="./asset/logo.png" alt="EventGear Logo">
             <h1>Make Your Party Unforgettable with the Best Selection!</h1>
         </div>
-        <div class="profile">
-            <span>Hi, Ibu Owner Loli Cafe!</span>
-            <a href="#"><img src="./asset/icons/owner.jpg" alt="Profile Picture">
-        </div>
+        
     </header>
     <nav>
         <a href="#">Home</a>
@@ -142,15 +139,15 @@
         <div class="package-header">
             <img src="./asset/cat1.png" alt="Paket Catering">
             <div class="package-details">
-                <h2>PAKET CATERING I</h2>
+                <h2>CATERING PACKAGE I</h2>
                 <p>Rp. 2.000.000</p>
                 <a href="#" class="order-button"
                 onclick="window.location.href = 'Pembayaranform.php';"
-                >PESAN</a>
+                >Order</a>
             </div>
         </div>
         <div class="description">
-            <h3>DESKRIPSI PAKET CATERING I</h3>
+            <h3>DETAILS CATERING PACKAGE I</h3>
         </div>
         <div class="include">
             <h3>INCLUDE:</h3>

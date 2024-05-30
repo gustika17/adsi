@@ -3,83 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paket Catering</title>
+    <title>EventGear Payment Page</title>
     <style>
+        /* Internal CSS */
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f9eecf;
-        }
-
-        .container {
-            text-align: center;
-        }
-
-        .header {
-            background-image: url('path/to/background-image.jpg');
-            background-size: cover;
-            background-position: center;
-            padding: 50px 0;
-            color: #811a1a;
-            position: relative;
-        }
-
-        .header h1 {
-            font-size: 48px;
             margin: 0;
-            background: rgba(255, 255, 255, 0.8);
-            display: inline-block;
-            padding: 10px 20px;
+            padding: 0;
+            background-color: #f9e8c5;
         }
-
-        .packages {
-            display: flex;
-            justify-content: center;
-            padding: 20px 0;
-        }
-
-        .package {
-            background-color: #f8e8d4;
-            border: 2px solid #811a1a;
-            border-radius: 15px;
-            margin: 0 10px;
+        header {
+            background-color: #maroon;
+            color: #ffffff;
             padding: 10px;
-            width: 200px;
+            text-align: right;
+        }
+        header h1 {
+            float: left;
+            margin: 0;
+            font-size: 18px;
+        }
+        header .user {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        nav {
+            background-color: #800000;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #ffffff;
             text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
         }
-
-        .package img {
-            width: 100%;
-            border-radius: 10px;
+        nav a:hover {
+            background-color: #111;
+            color: #ffffff;
         }
-
-        .package h2 {
-            background-color: #811a1a;
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            background-color: #800000;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .payment-details {
+            background-color: #800000;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .payment-details img {
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+        .payment-details .bank-info {
+            text-align: center;
+            font-size: 18px;
+        }
+        .payment-details form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .payment-details form button {
+            background-color: #4CAF50;
             color: white;
-            padding: 10px 0;
-            margin: 10px 0 0;
-            border-radius: 0 0 10px 10px;
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .contact-info {
+            background-color: #f1f1f1;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .contact-info div {
+            flex: 1;
+            padding: 10px;
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .social-links a {
+            margin: 0 5px;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>PAKET CATERING</h1>
+    <header>
+        <h1>EventGear</h1>
+        <div class="user">Hi, Ibu Owner Loli Cafe!</div>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Catalogue</a>
+    </nav>
+    <div class="content">
+        <h2>MAKE PAYMENT IMMEDIATELY!<br?> 
+            Pemesanan anda akan di proses setelah anda melakukan pembayaran.</h2>
+        <div class="payment-details">
+            <img src="bank-logo.png" alt="Bank Logo">
+            <div class="bank-info">
+                <p>1497652434</p>
+                <p>a/n Safira Aulia</p>
+            </div>
+            <form>
+                <input type="file" id="payment-proof" name="payment-proof"><br>
+                <button type="submit">Send</button>
+                <button type="reset">Cancel</button>
+            </form>
         </div>
-        <div class="packages">
-            <div class="package">
-                <img src="path/to/image1.jpg" alt="Paket Catering I">
-                <h2>Paket Catering I</h2>
-            </div>
-            <div class="package">
-                <img src="path/to/image2.jpg" alt="Paket Catering II">
-                <h2>Paket Catering II</h2>
-            </div>
-            <div class="package">
-                <img src="path/to/image3.jpg" alt="Paket Catering III">
-                <h2>Paket Catering III</h2>
-            </div>
+    </div>
+    <div class="contact-info">
+        <div>
+            <h3>Kontak EventGear</h3>
+            <p>087899248741</p>
+            <p>081368982664 | 082269688481</p>
+            <p>0895640212372</p>
+            <p>eventgear.alatpesta@gmail.com</p>
+        </div>
+        <div>
+            <h3>Alamat</h3>
+            <p>Kemiling Permai, Kec. Kemiling, Kota Bandar Lampung, Lampung 35151</p>
+        </div>
+        <div class="social-links">
+            <h3>Join With Us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">WhatsApp</a>
         </div>
     </div>
 </body>
