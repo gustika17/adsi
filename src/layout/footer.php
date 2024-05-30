@@ -24,7 +24,7 @@
         </div>
 
         <div>
-          <h1 class="font-bold text-xl mb-3 text-center">ADDRESS</h1>
+          <h1 class="font-bold text-xl mb-3 text-center">Address</h1>
           <span class="font-semibold"
             >Kemiling Permai, Kec. Kemiling, Kota Bandar Lampung, Lampung
             35151</span
