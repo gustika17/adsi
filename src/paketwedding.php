@@ -128,7 +128,7 @@ if (!isset($_SESSION['login'])) {
               <div
                 class="flex justify-center h-full bg-gray-200 bg-no-repeat bg-cover bg-center bg-fixed p-6 dark:bg-neutral-800"
                 style="background-image: url(./asset/carousel/items3.jpg)"
-              >
+              > 
                 >
               </div>
             </div>
@@ -143,7 +143,7 @@ if (!isset($_SESSION['login'])) {
           <p
             class="absolute z-50 text-white top-52 left-1/2 text-5xl font-semibold -translate-x-1/2"
           >
-            Paket Katering
+          Catering packages
           </p>
         </div>
 
@@ -195,9 +195,9 @@ if (!isset($_SESSION['login'])) {
       <!-- End Slider -->
 
       <div class="mt-10 pb-20 flex justify-center gap-x-10 px-12">
-        <div class="w-1/2 bg-primary rounded-3xl px-4 py-16">
+      <div class="w-1/2 bg-primary rounded-3xl px-4 py-16" onclick="location.href='cat1.html';" style="cursor: pointer;">
           <h1 class="text-white font-bold text-center text-2xl mb-5">
-            Rent catering equipment
+          Catering package 1
           </h1>
           <img
             class="mx-auto"
@@ -208,15 +208,12 @@ if (!isset($_SESSION['login'])) {
           <p
             class="text-white text-center mt-10 max-w-[26.75rem] text-xl mx-auto"
           >
-            EventGear Catering Equipment as a catering equipment rental center
-            The largest and most complete in the Kemiling District area, Kota
-            Bandar Lampung. With a wide choice of catering equipment high
-            quality and affordable price.
+            GET
           </p>
         </div>
         <div class="w-1/2 bg-primary rounded-3xl px-4 py-16">
           <h1 class="text-white font-bold text-center text-2xl mb-5">
-            Decoration
+            Catering package 2
           </h1>
           <img
             class="mx-auto"
@@ -227,10 +224,7 @@ if (!isset($_SESSION['login'])) {
           <p
             class="text-white text-center mt-10 max-w-[26.75rem] text-xl mx-auto"
           >
-            EventGear Decoration, is a superior service provider with packages
-            complete decoration, including various classic knick-knacks
-            stunning. With an abundance of choices, EventGear is ready to
-            beautify every event you have with a touch of luxury and class.
+            GET
           </p>
         </div>
       </div>

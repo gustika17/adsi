@@ -61,10 +61,13 @@ if (!isset($_SESSION['login'])) {
 
     <section class="content">
         <div class="row">
-            <div class="card">
-                <img src="./asset/catering.png" alt="Paket Catering">
-                <h2>Catering Packages</h2>
-            </div>
+        <a href="paketwedding.php" style="text-decoration: none; color: inherit;">
+    <div class="card">
+        <img src="./asset/catering.png" alt="Paket Catering">
+        <h2>Catering Packages</h2>
+    </div>
+</a>
+
             <div class="card">
                 <img src="./asset/wedding.png" alt="Paket Wedding">
                 <h2>Wedding Packages</h2>
