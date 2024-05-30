@@ -195,7 +195,7 @@ if (!isset($_SESSION['login'])) {
       <!-- End Slider -->
 
       <div class="mt-10 pb-20 flex justify-center gap-x-10 px-12">
-      <div class="w-1/2 bg-primary rounded-3xl px-4 py-16" onclick="location.href='cat1.html';" style="cursor: pointer;">
+      <div class="w-1/2 bg-primary rounded-3xl px-4 py-16" onclick="location.href='cat1.php';" style="cursor: pointer;">
           <h1 class="text-white font-bold text-center text-2xl mb-5">
           Catering package 1
           </h1>
