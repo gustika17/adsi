@@ -97,6 +97,49 @@
         font-size: 1.5em; /* Make the text smaller */
         font-weight: bold;
       }
+
+      .popup-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .popup-content {
+        background-color: #6f0b0b;
+        padding: 40px;
+        border-radius: 30px; /* Increased border radius */
+        text-align: center;
+        width: 400px;
+        color: #feeec5;
+      }
+
+      .popup-content h2 {
+        margin: 0 0 20px;
+        font-size: 1.5em;
+        color: #feeec5;
+      }
+
+      .popup-content button {
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #feeec5;
+        color: black; /* Changed text color to black */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold; /* Made text bold */
+      }
+
+      .popup-content button:hover {
+        background-color: #f2d7a5;
+      }
     </style>
   </head>
   <body>
@@ -106,7 +149,7 @@
     </header>
 
     <div class="containers">
-      <form action="#">
+      <form id="contactForm" action="#">
         <div class="input-group">
           <input
             type="text"
@@ -139,10 +182,10 @@
 
         <div class="input-group">
           <select id="paket_sewa" name="paket_sewa" required>
-            <option value="" disabled selected>select package</option>
-            <option value="paket1">package 1</option>
-            <option value="paket2">package 2</option>
-            <option value="paket3">package 3</option>
+            <option value="" disabled selected>Select package</option>
+            <option value="paket1">Package 1</option>
+            <option value="paket2">Package 2</option>
+            <option value="paket3">Package 3</option>
           </select>
         </div>
 
@@ -152,12 +195,38 @@
         </div>
 
         <div class="button-group">
-          <button type="button">CANCEL</button>
-          <button type="submit">NEXT</button>
+          <button type="button" onclick="cancelForm()">CANCEL</button>
+          <button type="button" onclick="showPopup()">NEXT</button>
         </div>
       </form>
     </div>
 
+    <div class="popup-overlay" id="popupOverlay">
+      <div class="popup-content">
+        <h2>Is your data correct?</h2>
+        <button onclick="submitForm()">Yes</button>
+        <button onclick="hidePopup()">No</button>
+      </div>
+    </div>
+
     <?php include "layout/footer.php" ?>
+
+    <script>
+      function showPopup() {
+        document.getElementById('popupOverlay').style.display = 'flex';
+      }
+
+      function hidePopup() {
+        document.getElementById('popupOverlay').style.display = 'none';
+      }
+
+      function submitForm() {
+        document.getElementById('contactForm').submit();
+      }
+
+      function cancelForm() {
+        document.getElementById('contactForm').reset();
+      }
+    </script>
   </body>
 </html>
