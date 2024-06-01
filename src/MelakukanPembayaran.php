@@ -12,6 +12,8 @@ if (!isset($_SESSION['login'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EventGear Party Equipment</title>
     <link rel="stylesheet" href="output.css">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         .content {
             display: flex;
@@ -50,14 +52,24 @@ if (!isset($_SESSION['login'])) {
             color: white;
             padding: 20px;
             border-radius: 8px;
-            margin: 20px;
+            margin: 20px auto; /* Center the element */
+            width: 100%;
+            max-width: 600px; /* Set a max-width */
+            box-sizing: border-box;
         }
-        .payment-info h1 {
+        .payment-header {
+            background-color: #6F0B0B;
+            color: white;
+            padding: 15px 20px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            text-align: center;
             font-size: 24px;
             font-weight: bold;
         }
         .payment-info p {
             font-size: 18px;
+            text-align: center; /* Center the text */
         }
         .payment-info img {
             width: 150px;
@@ -81,9 +93,28 @@ if (!isset($_SESSION['login'])) {
             padding: 10px 20px;
             border: none;
             border-radius: 8px;
-            background-color: #000;
+            background-color: #333;
             color: white;
             cursor: pointer;
+        }
+        .payment-info .upload-section button i {
+            margin-right: 8px; /* Add some space between icon and text */
+        }
+        .popup {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            left: 50%; /* Center the popup */
+            top: 50%; /* Center the popup */
+            transform: translate(-50%, -50%);
+            background-color: #FEEEC5;
+            color: #6F0B0B;
+            padding: 60px;
+            border-radius: 20px;
+            font-style: italic;
+            font-weight: bold; /* Make text bold */
+            z-index: 1001; /* Ensure popup is above other elements */
+            text-align: center;
+            font-size: 24px; /* Larger text size */
         }
     </style>
 </head>
@@ -99,24 +130,28 @@ if (!isset($_SESSION['login'])) {
 
     <div class="content">
         <div class="payment-info">
-            <h1>MAKE PAYMENT IMMEDIATELY!</h1>
+            <div class="payment-header">MAKE PAYMENT IMMEDIATELY!</div>
             <p>Your order will be processed after you make the payment.</p>
             <img src="asset/icons/BNI.webp" alt="BNI Logo">
             <div class="bank-details">
-                <p>Account Number: 1497652434</p>
-                <p>Account Holder: Safira Aulia</p>
+                <p>1497652434</p>
+                <p>a/n Safira Aulia</p>
             </div>
             <div class="instructions">
                 <p>Send your proof of payment to the place we have provided below!</p>
             </div>
             <div class="upload-section">
                 <input type="file" id="proof_of_payment" style="display:none;">
-                <button onclick="document.getElementById('proof_of_payment').click()">Add image</button>
-                <button>Send</button>
+                <button onclick="document.getElementById('proof_of_payment').click()">
+                    <i class="fas fa-image"></i> Add image
+                </button>
+                <button id="send-btn">Send</button>
                 <button>Cancel</button>
             </div>
         </div>
     </div>
+    
+    <div id="popup" class="popup">Your transaction is valid !!</div>
     
     <?php include "layout/footer.php"; ?>
     <style>
@@ -204,6 +239,15 @@ if (!isset($_SESSION['login'])) {
         sidebar.classList.remove('active');
         overlay.classList.remove('active');
         document.body.classList.remove('body-lock-scroll');
+      });
+
+      // Show popup notification
+      document.getElementById('send-btn').addEventListener('click', () => {
+        const popup = document.getElementById('popup');
+        popup.style.display = 'block';
+        setTimeout(() => {
+          popup.style.display = 'none';
+        }, 3000); // Hide after 3 seconds
       });
     </script>
 
