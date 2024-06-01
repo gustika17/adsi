@@ -26,7 +26,7 @@ if (!isset($_SESSION['login'])) {
                 <p class="text-lg mt-2">Welcome !</p>
             </div>
             <button class="mt-auto py-2 px-6 w-24 bg-beige-300 text-custom-red font-semibold rounded-full"
-            onclick="window.location.href = 'catalogue.php';"
+            onclick="window.location.href = 'cataloguePenjual.php';"
             >
                 
                 NEXT</button>
