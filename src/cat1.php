@@ -1,9 +1,18 @@
+<?php
+session_start();
+if (!isset($_SESSION['login'])) {
+  header("Location: logins.php");
+  exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Paket Catering I - EventGear Alat Pesta</title>
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -128,7 +137,10 @@
             <img src="./asset/logo.png" alt="EventGear Logo">
             <h1>Make Your Party Unforgettable with the Best Selection!</h1>
         </div>
-        
+        <div class="profile">
+        <p><?php echo "Hi, " . $_SESSION['login']['nama']; ?></p>
+            <a href="#"><img src="./asset/icons/owner.jpg" alt="Profile Picture"></a>
+        </div>
     </header>
     <nav>
         <a href="#">Home</a>
