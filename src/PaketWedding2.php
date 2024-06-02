@@ -110,7 +110,7 @@ if (!isset($_SESSION['login'])) {
             <div class="hs-carousel-slide">
               <div
                 class="flex items-end h-full bg-gray-100 p-6 bg-no-repeat bg-cover bg-center dark:bg-items1"
-                style="background-image: url(./asset/carousel/CT1.jpg)"
+                style="background-image: url(./asset/carousel/WD1.jpg)"
               >
                 >
               </div>
@@ -118,7 +118,7 @@ if (!isset($_SESSION['login'])) {
             <div class="hs-carousel-slide">
               <div
                 class="flex justify-center h-full bg-gray-200 bg-no-repeat bg-cover bg-bottom bg-fixed p-6 dark:bg-neutral-800"
-                style="background-image: url(./asset/carousel/CT2.jpg)"
+                style="background-image: url(./asset/carousel/WD2.jpg)"
               >
                 >
               </div>
@@ -127,7 +127,7 @@ if (!isset($_SESSION['login'])) {
             <div class="hs-carousel-slide">
               <div
                 class="flex justify-center h-full bg-gray-200 bg-no-repeat bg-cover bg-center bg-fixed p-6 dark:bg-neutral-800"
-                style="background-image: url(./asset/carousel/CT3.jpg)"
+                style="background-image: url(./asset/carousel/WD3.jpg)"
               > 
                 >
               </div>
@@ -136,14 +136,14 @@ if (!isset($_SESSION['login'])) {
             <div class="hs-carousel-slide">
               <div
                 class="flex justify-center h-full bg-no-repeat bg-cover bg-center bg-gray-300 p-6 dark:bg-neutral-700"
-                style="background-image: url(./asset/carousel/CT4.jpg)"
+                style="background-image: url(./asset/carousel/WD4.jpg)"
               ></div>
             </div>
           </div>
           <p
             class="absolute z-50 text-white top-52 left-1/2 text-5xl font-bold -translate-x-1/2"
           >
-          CATERING PACKAGES
+          WEDDING PACKAGES
           </p>
         </div>
 
