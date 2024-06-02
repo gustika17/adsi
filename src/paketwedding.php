@@ -8,82 +8,86 @@ if (!isset($_SESSION['login'])) {
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="./output.css" />
-  <style>
-    /* Custom styles for the sidebar menu */
-    .sidebar {
-      position: fixed;
-      top: 30px;
-      right: -250px; /* Awalnya tersembunyi di sebelah kanan */
-      width: 200px;
-      background-color: #6F0B0B;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transition: right 0.3s ease;
-      z-index: 1000; /* Pastikan sidebar berada di atas elemen lainnya */
-      border-top-left-radius: 50px; /* Radius sudut kanan bagian atas */
-      border-bottom-left-radius: 50px; /* Radius sudut kanan bagian bawah */
-    }
-    .sidebar a:last-child {
-      margin-top: 100px; /* Dorong item terakhir ke bawah */
-      margin-bottom: 10px; /* Hilangkan margin bawah untuk item terakhir */
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./output.css" />
+    <style>
+      /* Custom styles for the sidebar menu */
+      .sidebar {
+        position: fixed;
+        top: 30px;
+        right: -250px; /* Awalnya tersembunyi di sebelah kanan */
+        width: 200px;
+        background-color: #6f0b0b;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.3s ease;
+        z-index: 1000; /* Pastikan sidebar berada di atas elemen lainnya */
+        border-top-left-radius: 50px; /* Radius sudut kanan bagian atas */
+        border-bottom-left-radius: 50px; /* Radius sudut kanan bagian bawah */
+      }
+      .sidebar a:last-child {
+        margin-top: 100px; /* Dorong item terakhir ke bawah */
+        margin-bottom: 10px; /* Hilangkan margin bawah untuk item terakhir */
+      }
 
+      .sidebar.active {
+        right: 0; /* Tampilkan sidebar */
+      }
 
-    .sidebar.active {
-      right: 0; /* Tampilkan sidebar */
-    }
-
-    .sidebar a {
-      display: block;
-      width: 150px;
-      height: 50px;
-      padding: 15px;
-      margin-top: 10px;
-      margin-bottom: 0;
-      background-color: #F5DEB3;
-      color: #6f0b0b;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 20px;
-      font-weight: bold;
-    }
-    .toggle-btn {
-      top: 20px;
-      right: 20px;
-      cursor: pointer;
-    }
-    .overlay {
-      display: none; /* Initially hidden */
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-      z-index: 999; /* Ensure overlay is above other elements but below sidebar */
-    }
-    .overlay.active {
-      display: block; /* Show overlay when active */
-    }
-    body.body-lock-scroll {
-      overflow: hidden; /* Lock scroll when sidebar is active */
-    }
-  
-
-  </style>
-</head>
+      .sidebar a {
+        display: block;
+        width: 150px;
+        height: 50px;
+        padding: 15px;
+        margin-top: 10px;
+        margin-bottom: 0;
+        background-color: #f5deb3;
+        color: #6f0b0b;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: bold;
+      }
+      .toggle-btn {
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+      }
+      .overlay {
+        display: none; /* Initially hidden */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Semi-transparent black overlay */
+        z-index: 999; /* Ensure overlay is above other elements but below sidebar */
+      }
+      .overlay.active {
+        display: block; /* Show overlay when active */
+      }
+      body.body-lock-scroll {
+        overflow: hidden; /* Lock scroll when sidebar is active */
+      }
+    </style>
+  </head>
   <body class="bg-nav">
-    
-    <?php include "layout/header.php" ?>
-     <!-- Sidebar -->
-     <div class="sidebar" id="sidebar">
+    <div class="absolute top-0 left-1/2 w-full text-white -translate-x-1/2 z-50">
+      <?php include "layout/header.php" ?>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
       <a href="#">Profile</a>
       <a href="Setting.php">Setting</a>
       <a href="pemilik.php">Start Selling</a>
@@ -99,15 +103,13 @@ if (!isset($_SESSION['login'])) {
   }'
         class="relative"
       >
-        <div
-          class="hs-carousel relative overflow-hidden w-full min-h-[35.5rem] bg-white rounded-lg"
-        >
+        <div class="hs-carousel relative w-full min-h-[20rem] rounded-lg">
           <div
             class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0"
           >
             <div class="hs-carousel-slide">
               <div
-                class="flex justify-center h-full bg-gray-100 p-6 bg-no-repeat bg-cover bg-center dark:bg-items1"
+                class="flex items-end h-full bg-gray-100 p-6 bg-no-repeat bg-cover bg-center dark:bg-items1"
                 style="background-image: url(./asset/carousel/items1.jpg)"
               >
                 >
@@ -126,7 +128,7 @@ if (!isset($_SESSION['login'])) {
               <div
                 class="flex justify-center h-full bg-gray-200 bg-no-repeat bg-cover bg-center bg-fixed p-6 dark:bg-neutral-800"
                 style="background-image: url(./asset/carousel/items3.jpg)"
-              >
+              > 
                 >
               </div>
             </div>
@@ -138,6 +140,11 @@ if (!isset($_SESSION['login'])) {
               ></div>
             </div>
           </div>
+          <p
+            class="absolute z-50 text-white top-52 left-1/2 text-5xl font-bold -translate-x-1/2"
+          >
+          CATERING PACKAGES
+          </p>
         </div>
 
         <button
@@ -188,9 +195,9 @@ if (!isset($_SESSION['login'])) {
       <!-- End Slider -->
 
       <div class="mt-10 pb-20 flex justify-center gap-x-10 px-12">
-        <div class="w-1/2 bg-primary rounded-3xl px-4 py-16">
+      <div class="w-1/2 bg-primary rounded-3xl px-4 py-16" onclick="location.href='cat1.php';" style="cursor: pointer;">
           <h1 class="text-white font-bold text-center text-2xl mb-5">
-          Rent catering equipment
+          Catering package 1
           </h1>
           <img
             class="mx-auto"
@@ -201,15 +208,12 @@ if (!isset($_SESSION['login'])) {
           <p
             class="text-white text-center mt-10 max-w-[26.75rem] text-xl mx-auto"
           >
-            EventGear Catering Equipment as a catering equipment rental center
-            The largest and most complete in the Kemiling District area, Kota
-            Bandar Lampung. With a wide choice of catering equipment
-            high quality and affordable price.
+            GET
           </p>
         </div>
         <div class="w-1/2 bg-primary rounded-3xl px-4 py-16">
           <h1 class="text-white font-bold text-center text-2xl mb-5">
-            Decoration
+            Catering package 2
           </h1>
           <img
             class="mx-auto"
@@ -220,36 +224,31 @@ if (!isset($_SESSION['login'])) {
           <p
             class="text-white text-center mt-10 max-w-[26.75rem] text-xl mx-auto"
           >
-            EventGear Decoration, is a superior service provider with packages
-            complete decoration, including various classic knick-knacks
-            stunning. With an abundance of choices, EventGear is ready to beautify
-            every event you have with a touch of luxury and class.
+            GET
           </p>
         </div>
       </div>
     </section>
 
     <?php include "layout/footer.php"; ?>
-   
 
     <script src="./../node_modules/preline/dist/preline.js"></script>
-  <script>
-    const toggleBtn = document.getElementById('toggle-btn');
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('overlay');
+    <script>
+      const toggleBtn = document.getElementById("toggle-btn");
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
 
-    toggleBtn.addEventListener('click', () => {
-      sidebar.classList.toggle('active');
-      overlay.classList.toggle('active');
-      document.body.classList.toggle('body-lock-scroll');
-    });
+      toggleBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("active");
+        overlay.classList.toggle("active");
+        document.body.classList.toggle("body-lock-scroll");
+      });
 
-    overlay.addEventListener('click', () => {
-      sidebar.classList.remove('active');
-      overlay.classList.remove('active');
-      document.body.classList.remove('body-lock-scroll');
-    });
-  </script>
-
+      overlay.addEventListener("click", () => {
+        sidebar.classList.remove("active");
+        overlay.classList.remove("active");
+        document.body.classList.remove("body-lock-scroll");
+      });
+    </script>
   </body>
 </html>
