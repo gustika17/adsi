@@ -83,7 +83,7 @@ if (!isset($_SESSION['login'])) {
         <div class="row-container">
             <div class="row-shape"></div>
             <div class="row">
-                <a href="paketwedding.php" style="text-decoration: none; color: inherit;">
+                <a href="editCat.php" style="text-decoration: none; color: inherit;">
                     <div class="card">
                         <img src="./asset/catering.png" alt="Paket Catering">
                         <h2>Catering Packages</h2>

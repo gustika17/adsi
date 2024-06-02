@@ -195,13 +195,13 @@ if (!isset($_SESSION['login'])) {
       <!-- End Slider -->
 
       <div class="mt-10 pb-20 flex justify-center gap-x-10 px-12">
-      <div class="w-1/2 bg-primary rounded-3xl px-4 py-16" onclick="location.href='cat1.php';" style="cursor: pointer;">
+      <div class="w-1/2 bg-primary rounded-3xl px-4 py-16" onclick="location.href='wedPak1.php';" style="cursor: pointer;">
           <h1 class="text-white font-bold text-center text-2xl mb-5">
-          Catering package 1
+          Wedding package I
           </h1>
           <img
             class="mx-auto"
-            src="./asset/Alat-Catering-Group-uk-image-web-768x511-1-q219nb6syyln18z1sy4kkqhjpdv9vhb9o8bgh6o9lw 1 (1).png"
+            src="./asset/icons/PKT WD1.png"
             alt=""
           />
 
@@ -211,13 +211,13 @@ if (!isset($_SESSION['login'])) {
             GET
           </p>
         </div>
-        <div class="w-1/2 bg-primary rounded-3xl px-4 py-16">
+        <div class="w-1/2 bg-primary rounded-3xl px-4 py-16" onclick="location.href='wedPak2.php';" style="cursor: pointer;">>
           <h1 class="text-white font-bold text-center text-2xl mb-5">
-            Catering package 2
+            Wedding package II
           </h1>
           <img
             class="mx-auto"
-            src="./asset/Alat-Catering-Group-uk-image-web-768x511-1-q219nb6syyln18z1sy4kkqhjpdv9vhb9o8bgh6o9lw 1 (1).png"
+            src="./asset/icons/PKT WD 2.png"
             alt=""
           />
 
