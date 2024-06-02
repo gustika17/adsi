@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['login'])) {
+  header("Location: logins.php");
+  exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,8 +137,8 @@
             <h1>Make Your Party Unforgettable with the Best Selection!</h1>
         </div>
         <div class="profile">
-            <span>Hi, Ibu Owner Loli Cafe!</span>
-            <a href="#"><img src="./asset/profile.png" alt="Profile Picture"></a>
+        <p><?php echo "Hi, " . $_SESSION['login']['nama']; ?></p>
+            <a href="#"><img src="./asset/owner,jpg" alt="Profile Picture"></a>
         </div>
     </header>
     <nav>
