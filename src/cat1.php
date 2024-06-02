@@ -12,6 +12,7 @@ if (!isset($_SESSION['login'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Paket Catering I - EventGear Alat Pesta</title>
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -138,7 +139,7 @@ if (!isset($_SESSION['login'])) {
         </div>
         <div class="profile">
         <p><?php echo "Hi, " . $_SESSION['login']['nama']; ?></p>
-            <a href="#"><img src="./asset/owner,jpg" alt="Profile Picture"></a>
+            <a href="#"><img src="./asset/icons/owner.jpg" alt="Profile Picture"></a>
         </div>
     </header>
     <nav>
