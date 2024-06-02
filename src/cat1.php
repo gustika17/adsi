@@ -137,10 +137,14 @@ if (!isset($_SESSION['login'])) {
             <img src="./asset/logo.png" alt="EventGear Logo">
             <h1>Make Your Party Unforgettable with the Best Selection!</h1>
         </div>
+<<<<<<< HEAD
         <div class="profile">
         <p><?php echo "Hi, " . $_SESSION['login']['nama']; ?></p>
             <a href="#"><img src="./asset/icons/owner.jpg" alt="Profile Picture"></a>
         </div>
+=======
+        
+>>>>>>> 65f71d1f567863eb1967a8bfe165981dcda9a1d2
     </header>
     <nav>
         <a href="#">Home</a>
@@ -151,13 +155,15 @@ if (!isset($_SESSION['login'])) {
         <div class="package-header">
             <img src="./asset/cat1.png" alt="Paket Catering">
             <div class="package-details">
-                <h2>PAKET CATERING I</h2>
+                <h2>CATERING PACKAGE I</h2>
                 <p>Rp. 2.000.000</p>
-                <a href="#" class="order-button">PESAN</a>
+                <a href="#" class="order-button"
+                onclick="window.location.href = 'Pembayaranform.php';"
+                >Order</a>
             </div>
         </div>
         <div class="description">
-            <h3>DESKRIPSI PAKET CATERING I</h3>
+            <h3>DETAILS CATERING PACKAGE I</h3>
         </div>
         <div class="include">
             <h3>INCLUDE:</h3>
