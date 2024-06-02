@@ -137,14 +137,10 @@ if (!isset($_SESSION['login'])) {
             <img src="./asset/logo.png" alt="EventGear Logo">
             <h1>Make Your Party Unforgettable with the Best Selection!</h1>
         </div>
-<<<<<<< HEAD
         <div class="profile">
         <p><?php echo "Hi, " . $_SESSION['login']['nama']; ?></p>
             <a href="#"><img src="./asset/icons/owner.jpg" alt="Profile Picture"></a>
         </div>
-=======
-        
->>>>>>> 65f71d1f567863eb1967a8bfe165981dcda9a1d2
     </header>
     <nav>
         <a href="#">Home</a>
