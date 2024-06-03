@@ -49,7 +49,7 @@ if (!isset($_SESSION['login'])) {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
             width: 200px;
-            background-color: #FFF3CD;
+            background-color: #730000;
             position: relative;
         }
         .card img {
@@ -59,12 +59,11 @@ if (!isset($_SESSION['login'])) {
         }
         .card h2 {
             color: white;
-            padding: 5px 10px; /* Reduced padding for a smaller background */
+            padding: 5px 10px; 
             border-radius: 8px;
             font-size: 20px;
             z-index: 1;
             display: inline-block;
-            background-color: #6F0B0B; /* Background color changed to #6F0B0B */
             position: relative;
         }
     </style>
@@ -130,18 +129,18 @@ if (!isset($_SESSION['login'])) {
       flex-direction: column;
       align-items: center;
       transition: right 0.3s ease;
-      z-index: 1000; /* Pastikan sidebar berada di atas elemen lainnya */
-      border-top-left-radius: 50px; /* Radius sudut kanan bagian atas */
-      border-bottom-left-radius: 50px; /* Radius sudut kanan bagian bawah */
+      z-index: 1000; 
+      border-top-left-radius: 50px; 
+      border-bottom-left-radius: 50px; 
     }
     .sidebar a:last-child {
-      margin-top: 100px; /* Dorong item terakhir ke bawah */
-      margin-bottom: 10px; /* Hilangkan margin bawah untuk item terakhir */
+      margin-top: 100px; 
+      margin-bottom: 10px; 
     }
 
 
     .sidebar.active {
-      right: 0; /* Tampilkan sidebar */
+      right: 0; 
     }
 
     .sidebar a {
@@ -170,14 +169,14 @@ if (!isset($_SESSION['login'])) {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-      z-index: 999; /* Ensure overlay is above other elements but below sidebar */
+      background-color: rgba(0, 0, 0, 0.5); 
+      z-index: 999; 
     }
     .overlay.active {
-      display: block; /* Show overlay when active */
+      display: block; 
     }
     body.body-lock-scroll {
-      overflow: hidden; /* Lock scroll when sidebar is active */
+      overflow: hidden;
     }
       .text-justify {
       text-align: justify;
