@@ -108,7 +108,7 @@ if (!isset($_SESSION['login'])) {
             <div class="hs-carousel-slide">
               <div
                 class="flex justify-center h-full bg-gray-100 p-6 bg-no-repeat bg-cover bg-center dark:bg-items1"
-                style="background-image: url(./asset/carousel/items1.jpg)"
+                style="background-image: url(./asset/carousel/CT1.jpg)"
               >
                 >
               </div>
@@ -116,7 +116,7 @@ if (!isset($_SESSION['login'])) {
             <div class="hs-carousel-slide">
               <div
                 class="flex justify-center h-full bg-gray-200 bg-no-repeat bg-cover bg-bottom bg-fixed p-6 dark:bg-neutral-800"
-                style="background-image: url(./asset/carousel/items2.jpg)"
+                style="background-image: url(./asset/carousel/BD2.jpg)"
               >
                 >
               </div>
@@ -125,7 +125,7 @@ if (!isset($_SESSION['login'])) {
             <div class="hs-carousel-slide">
               <div
                 class="flex justify-center h-full bg-gray-200 bg-no-repeat bg-cover bg-center bg-fixed p-6 dark:bg-neutral-800"
-                style="background-image: url(./asset/carousel/items3.jpg)"
+                style="background-image: url(./asset/carousel/WD3.jpg)"
               >
                 >
               </div>
@@ -134,7 +134,7 @@ if (!isset($_SESSION['login'])) {
             <div class="hs-carousel-slide">
               <div
                 class="flex justify-center h-full bg-no-repeat bg-cover bg-center bg-gray-300 p-6 dark:bg-neutral-700"
-                style="background-image: url(./asset/carousel/items4.jpg)"
+                style="background-image: url(./asset/carousel/CT4.jpg)"
               ></div>
             </div>
           </div>
@@ -194,7 +194,7 @@ if (!isset($_SESSION['login'])) {
           </h1>
           <img
             class="mx-auto"
-            src="./asset/Alat-Catering-Group-uk-image-web-768x511-1-q219nb6syyln18z1sy4kkqhjpdv9vhb9o8bgh6o9lw 1 (1).png"
+            src="./asset/icons/CT1.png"
             alt=""
           />
 
@@ -213,7 +213,7 @@ if (!isset($_SESSION['login'])) {
           </h1>
           <img
             class="mx-auto"
-            src="./asset/Alat-Catering-Group-uk-image-web-768x511-1-q219nb6syyln18z1sy4kkqhjpdv9vhb9o8bgh6o9lw 1 (1).png"
+            src="./asset/icons/WD2.png"
             alt=""
           />
 

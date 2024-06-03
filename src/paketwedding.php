@@ -110,7 +110,7 @@ if (!isset($_SESSION['login'])) {
             <div class="hs-carousel-slide">
               <div
                 class="flex items-end h-full bg-gray-100 p-6 bg-no-repeat bg-cover bg-center dark:bg-items1"
-                style="background-image: url(./asset/carousel/items1.jpg)"
+                style="background-image: url(./asset/carousel/CT1.jpg)"
               >
                 >
               </div>
@@ -118,7 +118,7 @@ if (!isset($_SESSION['login'])) {
             <div class="hs-carousel-slide">
               <div
                 class="flex justify-center h-full bg-gray-200 bg-no-repeat bg-cover bg-bottom bg-fixed p-6 dark:bg-neutral-800"
-                style="background-image: url(./asset/carousel/items2.jpg)"
+                style="background-image: url(./asset/carousel/CT2.jpg)"
               >
                 >
               </div>
@@ -127,7 +127,7 @@ if (!isset($_SESSION['login'])) {
             <div class="hs-carousel-slide">
               <div
                 class="flex justify-center h-full bg-gray-200 bg-no-repeat bg-cover bg-center bg-fixed p-6 dark:bg-neutral-800"
-                style="background-image: url(./asset/carousel/items3.jpg)"
+                style="background-image: url(./asset/carousel/CT3.jpg)"
               > 
                 >
               </div>
@@ -136,7 +136,7 @@ if (!isset($_SESSION['login'])) {
             <div class="hs-carousel-slide">
               <div
                 class="flex justify-center h-full bg-no-repeat bg-cover bg-center bg-gray-300 p-6 dark:bg-neutral-700"
-                style="background-image: url(./asset/carousel/items4.jpg)"
+                style="background-image: url(./asset/carousel/CT4.jpg)"
               ></div>
             </div>
           </div>
@@ -197,11 +197,11 @@ if (!isset($_SESSION['login'])) {
       <div class="mt-10 pb-20 flex justify-center gap-x-10 px-12">
       <div class="w-1/2 bg-primary rounded-3xl px-4 py-16" onclick="location.href='cat1.php';" style="cursor: pointer;">
           <h1 class="text-white font-bold text-center text-2xl mb-5">
-          Catering package 1
+          Catering package I
           </h1>
           <img
             class="mx-auto"
-            src="./asset/Alat-Catering-Group-uk-image-web-768x511-1-q219nb6syyln18z1sy4kkqhjpdv9vhb9o8bgh6o9lw 1 (1).png"
+            src="./asset/icons/PKT1.png"
             alt=""
           />
 
@@ -211,13 +211,13 @@ if (!isset($_SESSION['login'])) {
             GET
           </p>
         </div>
-        <div class="w-1/2 bg-primary rounded-3xl px-4 py-16">
+        <div class="w-1/2 bg-primary rounded-3xl px-4 py-16" onclick="location.href='cat2.php';" style="cursor: pointer;">>
           <h1 class="text-white font-bold text-center text-2xl mb-5">
-            Catering package 2
+            Catering package II
           </h1>
           <img
             class="mx-auto"
-            src="./asset/Alat-Catering-Group-uk-image-web-768x511-1-q219nb6syyln18z1sy4kkqhjpdv9vhb9o8bgh6o9lw 1 (1).png"
+            src="./asset/icons/PKT2.png"
             alt=""
           />
 

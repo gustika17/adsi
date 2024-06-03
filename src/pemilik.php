@@ -10,10 +10,10 @@ if (!isset($_SESSION['login'])) {
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STORE INFORMATION</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STORE INFORMATION</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-beige-100">
@@ -60,32 +60,28 @@ if (!isset($_SESSION['login'])) {
             placeholder="PHONE NUMBER"
             class="w-full py-4 bg-custom-red text-white text-xl font-semibold rounded text-left px-4 placeholder-white"
           />
-          <div class="mt-8 flex justify-center ">
-                <img src="./asset/logoEventGear.png" alt="Store Image" class="rounded"width="300" height="300">
-            </div>
-        </div>
         </div>
 
-        </div>
     </div>
+  </div>
 
-    <style>
-        .bg-beige-100 {
-            background-color: #f5e9d2;
-        }
+  <style>
+    .bg-beige-100 {
+      background-color: #f5e9d2;
+    }
 
-        .bg-beige-300 {
-            background-color: #f4d8a4;
-        }
+    .bg-beige-300 {
+      background-color: #f4d8a4;
+    }
 
-        .bg-custom-red {
-            background-color: #6F0B0B;
-        }
+    .bg-custom-red {
+      background-color: #6F0B0B;
+    }
 
-        .text-custom-red {
-            color: #6F0B0B;
-        }
-    </style>
+    .text-custom-red {
+      color: #6F0B0B;
+    }
+  </style>
 </body>
 
 </html>

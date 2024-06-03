@@ -74,7 +74,7 @@ if (!isset($_SESSION['login'])) {
             display: flex;
             align-items: center;
             background-color: #FFF3CD;
-            padding: 16px;
+            padding: 13px;
             border-radius: 50px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-top: 30px;
@@ -143,13 +143,13 @@ if (!isset($_SESSION['login'])) {
         </div>
     </header>
     <nav>
-        <a href="#">Home</a>
+        <a href="index.php">Home</a>
         <a href="#">About us</a>
         <a href="#">Catalogue</a>
     </nav>
     <div class="container">
         <div class="package-header">
-            <img src="./asset/cat1.png" alt="Paket Catering">
+            <img src="./asset/icons/PKT1.png" alt="Paket Catering">
             <div class="package-details">
                 <h2>CATERING PACKAGE I</h2>
                 <p>Rp. 2.000.000</p>
