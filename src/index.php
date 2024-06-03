@@ -14,11 +14,11 @@ if (!isset($_SESSION['login'])) {
   <title>Dashboard</title>
   <link rel="stylesheet" href="./output.css" />
   <style>
-    /* Custom styles for the sidebar menu */
+
     .sidebar {
       position: fixed;
       top: 30px;
-      right: -250px; /* Awalnya tersembunyi di sebelah kanan */
+      right: -250px; 
       width: 200px;
       background-color: #6F0B0B;
       padding: 20px;
@@ -26,18 +26,18 @@ if (!isset($_SESSION['login'])) {
       flex-direction: column;
       align-items: center;
       transition: right 0.3s ease;
-      z-index: 1000; /* Pastikan sidebar berada di atas elemen lainnya */
-      border-top-left-radius: 50px; /* Radius sudut kanan bagian atas */
-      border-bottom-left-radius: 50px; /* Radius sudut kanan bagian bawah */
+      z-index: 1000;
+      border-top-left-radius: 50px; 
+      border-bottom-left-radius: 50px; 
     }
     .sidebar a:last-child {
-      margin-top: 100px; /* Dorong item terakhir ke bawah */
-      margin-bottom: 10px; /* Hilangkan margin bawah untuk item terakhir */
+      margin-top: 100px; 
+      margin-bottom: 10px; 
     }
 
 
     .sidebar.active {
-      right: 0; /* Tampilkan sidebar */
+      right: 0;
     }
 
     .sidebar a {
@@ -60,20 +60,20 @@ if (!isset($_SESSION['login'])) {
       cursor: pointer;
     }
     .overlay {
-      display: none; /* Initially hidden */
+      display: none; 
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-      z-index: 999; /* Ensure overlay is above other elements but below sidebar */
+      background-color: rgba(0, 0, 0, 0.5); 
+      z-index: 999; 
     }
     .overlay.active {
-      display: block; /* Show overlay when active */
+      display: block;
     }
     body.body-lock-scroll {
-      overflow: hidden; /* Lock scroll when sidebar is active */
+      overflow: hidden; 
     }
   
 
@@ -190,7 +190,7 @@ if (!isset($_SESSION['login'])) {
       <div class="mt-10 pb-20 flex justify-center gap-x-10 px-12">
         <div class="w-1/2 bg-primary rounded-3xl px-4 py-16">
           <h1 class="text-white font-bold text-center text-2xl mb-5">
-          Rent catering equipment
+          Rent Catering Equipment
           </h1>
           <img
             class="mx-auto"
