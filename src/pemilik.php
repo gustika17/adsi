@@ -60,6 +60,12 @@ if (!isset($_SESSION['login'])) {
             placeholder="PHONE NUMBER"
             class="w-full py-4 bg-custom-red text-white text-xl font-semibold rounded text-left px-4 placeholder-white"
           />
+          <!-- Image at the bottom -->
+            <div class="mt-8 flex justify-center pr-8">
+                 <img src="./asset/logoEventGear.png" alt="Store Image" class="rounded" width="350" height="350">
+            </div>
+
+          
         </div>
 
     </div>
