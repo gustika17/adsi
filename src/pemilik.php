@@ -10,78 +10,66 @@ if (!isset($_SESSION['login'])) {
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STORE INFORMATION</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STORE INFORMATION</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-beige-100">
-    <div class="flex h-screen">
-        <!-- Sidebar -->
-        <div class="bg-custom-red text-white w-1/4 p-6 flex flex-col items-center">
-            <img src="./asset/icons/owner.jpg" alt="" class="w-20 h-20 mb-2 rounded-full object-cover">
-            <div class="text-center">
-            <p class="font-light"><?php echo $_SESSION['login']['nama']." !"; ?></p>
-                <p class="text-lg mt-2">Welcome !</p>
-            </div>
-            <button class="mt-auto py-2 px-6 w-24 bg-beige-300 text-custom-red font-semibold rounded-full"
-            onclick="window.location.href = 'cataloguePenjual.php';"
-            >
-                
-                NEXT</button>
-            <button class="mt-2 py-2 px-3 w-24 bg-beige-300 text-custom-red font-semibold rounded-full"
-            onclick="window.location.href = 'index.php';"
-            >
-                
-                CANCEL</button>
-            
-        </div>
-        <!-- Main Content -->
-        <div class="bg-beige-100 flex-1 p-16">
-          <div class=" space-y-4"> 
-          <input
-            type="text"
-            placeholder="STORE NAME"
-            class="w-full py-4 bg-custom-red text-white text-xl font-semibold rounded text-left px-4 placeholder-white"
-          />
-          <input
-            type="text"
-            placeholder="STORE ADDRESS"
-            class="w-full py-4 bg-custom-red text-white text-xl font-semibold rounded text-left px-4 placeholder-white"
-          />
-          <input
-            type="text"
-            placeholder="EMAIL"
-            class="w-full py-4 bg-custom-red text-white text-xl font-semibold rounded text-left px-4 placeholder-white"
-          />
-          <input
-            type="text"
-            placeholder="PHONE NUMBER"
-            class="w-full py-4 bg-custom-red text-white text-xl font-semibold rounded text-left px-4 placeholder-white"
-          />
-        </div>
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <div class="bg-custom-red text-white w-1/4 p-6 flex flex-col items-center">
+      <img src="./asset/icons/owner.jpg" alt="" class="w-20 h-20 mb-2 rounded-full object-cover">
+      <div class="text-center">
+        <p class="font-light"><?php echo $_SESSION['login']['nama'] . " !"; ?></p>
+        <p class="text-lg mt-2">Welcome !</p>
+      </div>
 
-        </div>
+
+      <div class="h-full flex items-end">
+        <button class="mt-2 py-2 px-3 w-24 bg-beige-300 text-custom-red font-semibold rounded-full" onclick="window.location.href = 'index.php';">
+
+          CANCEL</button>
+
+      </div>
+
     </div>
+    <!-- Main Content -->
+    <div class="bg-beige-100 flex-1 p-16">
+      <div>
+        <form class="space-y-4" action="pemilikInsert.php" method="post">
+          <input type="text" name="storename" placeholder="STORE NAME" class="w-full py-4 bg-custom-red text-white text-xl font-semibold rounded text-left px-4 placeholder-white" />
+          <input name="storeaddress" type="text" placeholder="STORE ADDRESS" class="w-full py-4 bg-custom-red text-white text-xl font-semibold rounded text-left px-4 placeholder-white" />
+          <input name="email" type="text" placeholder="EMAIL" class="w-full py-4 bg-custom-red text-white text-xl font-semibold rounded text-left px-4 placeholder-white" />
+          <input name="phone" type="text" placeholder="PHONE NUMBER" class="w-full py-4 bg-custom-red text-white text-xl font-semibold rounded text-left px-4 placeholder-white" />
 
-    <style>
-        .bg-beige-100 {
-            background-color: #f5e9d2;
-        }
+          <button name="submit" type="submit" class="absolute left-[8.2rem] bottom-20 mt-auto py-2 px-6 w-24 bg-beige-300 text-custom-red font-semibold rounded-full">
 
-        .bg-beige-300 {
-            background-color: #f4d8a4;
-        }
+            NEXT</button>
+        </form>
+      </div>
 
-        .bg-custom-red {
-            background-color: #6F0B0B;
-        }
+    </div>
+  </div>
 
-        .text-custom-red {
-            color: #6F0B0B;
-        }
-    </style>
+  <style>
+    .bg-beige-100 {
+      background-color: #f5e9d2;
+    }
+
+    .bg-beige-300 {
+      background-color: #f4d8a4;
+    }
+
+    .bg-custom-red {
+      background-color: #6F0B0B;
+    }
+
+    .text-custom-red {
+      color: #6F0B0B;
+    }
+  </style>
 </body>
 
 </html>
