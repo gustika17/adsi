@@ -26,7 +26,7 @@ if (!isset($_SESSION['login'])) {
             justify-content: space-between;
             background-color: #730000;
             color: white;
-            padding: 10px 20px;
+            padding: 20px 50px;
         }
         header .logo-container {
             display: flex;
@@ -46,6 +46,7 @@ if (!isset($_SESSION['login'])) {
         }
         header .profile img {
             border-radius: 50%;
+            height: 40px;
             width: 40px;
             margin-left: 10px;
         }
@@ -135,7 +136,7 @@ if (!isset($_SESSION['login'])) {
     <header>
         <div class="logo-container">
             <img src="./asset/logo.png" alt="EventGear Logo">
-            <h1>Make Your Party Unforgettable with the Best Selection!</h1>
+            <h1>Make Your Party Unforgettable with the <br> Best Selection!</h1>
         </div>
         <div class="profile">
         <p><?php echo "Hi, " . $_SESSION['login']['nama']; ?></p>
