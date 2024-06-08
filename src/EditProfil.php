@@ -42,10 +42,10 @@
         }
 
         .profile-picture img {
-            width: 150px; /* Menambah ukuran gambar */
-            height: 150px; /* Menambah ukuran gambar */
+            width: 150px; 
+            height: 150px; 
             object-fit: cover;
-            border-radius: 50%; /* Membuat gambar menjadi bulat */
+            border-radius: 50%; 
         }
         .bg-primary{
             background-color: #964b3a;
