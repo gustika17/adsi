@@ -57,18 +57,16 @@
 </head>
 
 <body>
-    <section>
-        <div class="w-1/2 bg-primary rounded-3xl mt-10 mb-10 px-4 py-16 flex flex-col items-center">
-            <div class="profile-picture">
-                <img src="./asset/icons/owner.jpg" alt="Foto Profil" >
-            </div>
-            <div class="buttons">
-                <button class="button">Edit</button>
-                <button class="button">Home</button>
-            </div>
+    <div class="container">
+        <div class="profile-picture">
+            <img src="./asset/icons/owner.jpg" alt="Profile Picture">
         </div>
-    </section>
-    <?php include "layout/footer.php"; ?>
+        <div class="buttons">
+            <button class="button">Edit</button>
+            <button class="button">Home</button>
+        </div>
+    </div>
+    
 </body>
 
 </html>
