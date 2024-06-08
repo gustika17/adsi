@@ -119,16 +119,16 @@
             </div>
             <form>
                 <label for="name">Nama</label>
-                <input type="text" id="name" name="name" value="Ibu Owner Loli Cafe">
+                <input type="text" id="name" name="name" value="">
 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" value="lolicafe@gmail.com">
+                <input type="email" id="email" name="email" value="">
 
                 <label for="phone">No Telephone</label>
-                <input type="text" id="phone" name="phone" value="081234567899">
+                <input type="text" id="phone" name="phone" value="">
 
                 <label for="address">Address</label>
-                <input type="text" id="address" name="address" value="Bojong Gede">
+                <input type="text" id="address" name="address" value="">
             </form>
         </div>
         <div class="image-section">

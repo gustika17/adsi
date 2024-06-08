@@ -44,6 +44,9 @@
       </div>
     </div>
   </div>
+  <div class="text-center mt-4">
+    <span class="font-semibold">&copy; 2024 - EventGear Alat Pesta. All rights reserved.</span>
+  </div>
 </footer>
 
 <style>

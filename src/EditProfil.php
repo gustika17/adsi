@@ -33,11 +33,8 @@
             border: none;
             border-radius: 5px;
             padding: 10px 20px;
-            font-size: 20px;
+            font-size: 16px;
             cursor: pointer;
-            font-weight: bold;
-            width: 150px; 
-            height: 50px; 
         }
 
         .button:hover {
@@ -45,28 +42,27 @@
         }
 
         .profile-picture img {
-            width: 150px; 
-            height: 150px; 
+            width: 150px; /* Menambah ukuran gambar */
+            height: 150px; /* Menambah ukuran gambar */
             object-fit: cover;
-            border-radius: 50%; 
-        }
-        .bg-primary{
-            background-color: #964b3a;
+            border-radius: 50%; /* Membuat gambar menjadi bulat */
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="profile-picture">
-            <img src="./asset/icons/owner.jpg" alt="Profile Picture">
+    <section>
+        <div class="w-1/2 bg-primary rounded-3xl mt-10 mb-10 px-4 py-16 flex flex-col items-center">
+            <div class="profile-picture">
+                <img src="./asset/icons/owner.jpg" alt="Foto Profil" >
+            </div>
+            <div class="buttons">
+            <a href="PerbaruiProfil.php" class="button">Edit</a>
+            <a href="index.php" class="button">Home</a>
+            </div>
         </div>
-        <div class="buttons">
-            <button class="button">Edit</button>
-            <button class="button">Home</button>
-        </div>
-    </div>
-    
+    </section>
+    <?php include "layout/footer.php"; ?>
 </body>
 
 </html>
