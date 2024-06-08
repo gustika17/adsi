@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,48 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
+    <link rel="stylesheet" href="./output.css" />
     <style>
         body {
-            background-color: #f7e3b5;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            margin: 0;
         }
 
-        .container {
-            background-color: #964b3a;
-            border-radius: 10px;
-            width: 600px;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-
-        .profile-picture {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            overflow: hidden;
-            position: absolute;
-            top: 50px;
-        }
-
-        .profile-picture img {
+        section {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .buttons {
-            position: absolute;
-            bottom: 50px;
+            margin-top: 20%;
             display: flex;
             gap: 20px;
         }
@@ -58,28 +33,42 @@
             border: none;
             border-radius: 5px;
             padding: 10px 20px;
-            font-size: 16px;
+            font-size: 20px;
             cursor: pointer;
+            font-weight: bold;
+            width: 150px; 
+            height: 50px; 
         }
 
         .button:hover {
             background-color: #7a7a7a;
         }
+
+        .profile-picture img {
+            width: 150px; 
+            height: 150px; 
+            object-fit: cover;
+            border-radius: 50%; 
+        }
+        .bg-primary{
+            background-color: #964b3a;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="profile-picture">
-            <img src="./asset/icons/owner.jpg" alt="Profile Picture">
+    <section>
+        <div class="w-1/2 bg-primary rounded-3xl mt-10 mb-10 px-4 py-16 flex flex-col items-center">
+            <div class="profile-picture">
+                <img src="./asset/icons/owner.jpg" alt="Foto Profil" >
+            </div>
+            <div class="buttons">
+                <button class="button">Edit</button>
+                <button class="button">Home</button>
+            </div>
         </div>
-        <div class="buttons">
-            <button class="button">Edit</button>
-            <button class="button">Home</button>
-        </div>
-    </div>
-    
+    </section>
+    <?php include "layout/footer.php"; ?>
 </body>
-
 
 </html>

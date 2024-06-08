@@ -29,7 +29,7 @@
         <a href="https://www.facebook.com/satriosktiardka.satriosktiardka" target="_blank">
           <img src="./asset/icons/facebook.png" alt="fb" class="icon-small">
         </a>
-        <a href="https://x.com/unila_base?s=21" target="_blank">
+        <a href="https://x.com/Freyor_?t=7Tr6XJLRVcIZjJDhopHaHQ&s=09" target="_blank">
           <img src="./asset/icons/twitter.png" alt="x" class="icon-small">
         </a>
         <a href="https://www.instagram.com/gstkdw_?igsh=Znp5NnZzMnI5N282&utm_source=qr" target="_blank">
