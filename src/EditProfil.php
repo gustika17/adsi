@@ -74,9 +74,10 @@
             <img src="./asset/icons/owner.jpg" alt="Profile Picture">
         </div>
         <div class="buttons">
-            <button class="button">Edit</button>
-            <button class="button">Home</button>
-        </div>
+    <a href="PerbaruiProfil.php" class="button">Edit</a>
+    <button class="button">Home</button>
+</div>
+
     </div>
     
 </body>
