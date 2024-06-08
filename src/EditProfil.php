@@ -47,6 +47,9 @@
             object-fit: cover;
             border-radius: 50%; /* Membuat gambar menjadi bulat */
         }
+        .bg-primary{
+            background-color: #964b3a;
+        }
     </style>
 </head>
 
