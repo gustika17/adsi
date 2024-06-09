@@ -117,20 +117,29 @@ if(isset($_POST['submit'])) {
             background-color: #6b2420;
         }
 
-        .button.save {
-            margin-right: 10px; /* Tambahkan jarak ke kanan */
+        .image-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-left: 20px; /* Adjusted to slightly move to the right */
         }
 
-        .button.cancel {
-            margin-left: 10px; /* Tambahkan jarak ke kiri */
-        }
-        .profile-picture img {
-            width: 150px; 
-            height: 150px; 
-            object-fit: cover;
+        .image-section img {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
+            border: 5px solid white; /* Ring around the photo */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
         }
 
+        .button.save {
+    margin-right: 10px; /* Tambahkan jarak ke kanan */
+}
+
+.button.cancel {
+    margin-left: 10px; /* Tambahkan jarak ke kiri */
+}
 
     </style>
 </head>
@@ -142,30 +151,18 @@ if(isset($_POST['submit'])) {
             <div class="header">
                 <h1>PROFILE</h1>
             </div>
-            <?php
-            if(isset($_GET['success'])) {
-                echo "<p style='color:green;'>Profile updated successfully!</p>";
-            }
-            if(isset($_GET['error'])) {
-                echo "<p style='color:red;'>Failed to update profile. Please try again.</p>";
-            }
-            ?>
-            <form method="post" action="PerbaruiProfil.php">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" value="<?php echo htmlspecialchars(isset($user['nama']) ? $user['nama'] : ''); ?>">
+            <form>
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" value="">
 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" value="<?php echo htmlspecialchars(isset($user['email']) ? $user['email'] : ''); ?>">
+                <input type="email" id="email" name="email" value="">
 
-                <label for="phone">Phone Number</label>
-                <input type="text" id="phone" name="phone" value="<?php echo htmlspecialchars(isset($user['no_telpone']) ? $user['no_telpone'] : ''); ?>">
+                <label for="phone">No Telephone</label>
+                <input type="text" id="phone" name="phone" value="">
 
                 <label for="address">Address</label>
-                <input type="text" id="address" name="address" value="<?php echo htmlspecialchars(isset($user['alamat']) ? $user['alamat'] : ''); ?>">
-                <div class="buttons">
-                    <button class="button save" onclick="">Save</button>
-                    <button type="button" class="button cancel" onclick="window.location.href='index.php'">Cancel</button>
-                </div>
+                <input type="text" id="address" name="address" value="">
             </form>
         </div>
     </div>
