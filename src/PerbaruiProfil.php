@@ -124,7 +124,7 @@
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" value="">
 
-                <label for="phone">No Telephone</label>
+                <label for="phone">Phone Number</label>
                 <input type="text" id="phone" name="phone" value="">
 
                 <label for="address">Address</label>
