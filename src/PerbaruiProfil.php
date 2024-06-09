@@ -117,19 +117,24 @@
             <div class="header">
                 <h1>PROFILE</h1>
             </div>
-            <form>
+            <form action="simpanprofil.php" method="post">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" value="">
-
+                
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" value="">
-
+                
                 <label for="phone">Phone Number</label>
-                <input type="text" id="phone" name="phone" value="">
-
+                <input type="text" id="phone_number" name="phone_number" value="">
+                
                 <label for="address">Address</label>
                 <input type="text" id="address" name="address" value="">
+                
+                <button type="submit" class="button save">Save</button>
+                <button type="button" class="button cancel">Cancel</button>
             </form>
+
+
         </div>
         <div class="image-section">
             <img src="./asset/icons/owner.jpg" alt="Profile Picture">
