@@ -129,10 +129,7 @@
                 
                 <label for="address">Address</label>
                 <input type="text" id="address" name="address" value="">
-                
-                <button type="submit" class="button save">Save</button>
-                <button type="button" class="button cancel">Cancel</button>
-            </form>
+</form>
 
 
         </div>
