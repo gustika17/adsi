@@ -46,7 +46,44 @@ if(isset($_POST['submit'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Profile</title>
     <link rel="stylesheet" href="./output.css" />
+    <script>
+        function saveProfile() {
+            // Mengambil nilai dari elemen formulir
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var address = document.getElementById("address").value;
 
+            // Kirim data ke server menggunakan AJAX atau fetch API
+            // Misalnya, Anda dapat menggunakan fetch API seperti ini:
+            fetch('PerbaruiProfil.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    phone: phone,
+                    address: address
+                }),
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Handle jika berhasil
+                    console.log('Profile updated successfully!');
+                    // Redirect or display success message
+                } else {
+                    // Handle jika gagal
+                    console.error('Failed to update profile');
+                    // Redirect or display error message
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
     <style>
         body {
             background-color: #f7e3b5;
@@ -72,7 +109,7 @@ if(isset($_POST['submit'])) {
         .header h1 {
             margin: 0;
             color: white;
-            font-size: 24px;
+            font-size: 30px;
             font-weight: bold;
         }
 
@@ -163,8 +200,8 @@ if(isset($_POST['submit'])) {
                 <label for="address">Address</label>
                 <input type="text" id="address" name="address" value="<?php echo htmlspecialchars(isset($user['alamat']) ? $user['alamat'] : ''); ?>">
                 <div class="buttons">
-                    <button class="button save" onclick="">Save</button>
-                    <button type="button" class="button cancel" onclick="window.location.href='index.php'">Cancel</button>
+                    <button type="submit" name="submit" class="button save">Save</button>
+                    
                 </div>
             </form>
         </div>
@@ -172,6 +209,9 @@ if(isset($_POST['submit'])) {
     <div class="mt-10 mb-10 px-4 py-16 flex flex-col items-center">
                 <div class="profile-picture">
                     <img src="./asset/icons/owner.jpg" alt="Profile Picture">
+                </div>
+                 <div class="buttons">
+                    <button type="button" class="button cancel" onclick="window.location.href='index.php'">Cancel</button>
                 </div>
         
         </section>
