@@ -14,11 +14,11 @@ if (!isset($_SESSION['login'])) {
   <title>Dashboard</title>
   <link rel="stylesheet" href="./output.css" />
   <style>
-    /* Custom styles for the sidebar menu */
+
     .sidebar {
       position: fixed;
       top: 30px;
-      right: -250px; /* Awalnya tersembunyi di sebelah kanan */
+      right: -250px; 
       width: 200px;
       background-color: #6F0B0B;
       padding: 20px;
@@ -26,18 +26,18 @@ if (!isset($_SESSION['login'])) {
       flex-direction: column;
       align-items: center;
       transition: right 0.3s ease;
-      z-index: 1000; /* Pastikan sidebar berada di atas elemen lainnya */
-      border-top-left-radius: 50px; /* Radius sudut kanan bagian atas */
-      border-bottom-left-radius: 50px; /* Radius sudut kanan bagian bawah */
+      z-index: 1000;
+      border-top-left-radius: 50px; 
+      border-bottom-left-radius: 50px; 
     }
     .sidebar a:last-child {
-      margin-top: 100px; /* Dorong item terakhir ke bawah */
-      margin-bottom: 10px; /* Hilangkan margin bawah untuk item terakhir */
+      margin-top: 100px; 
+      margin-bottom: 10px; 
     }
 
 
     .sidebar.active {
-      right: 0; /* Tampilkan sidebar */
+      right: 0;
     }
 
     .sidebar a {
@@ -60,20 +60,20 @@ if (!isset($_SESSION['login'])) {
       cursor: pointer;
     }
     .overlay {
-      display: none; /* Initially hidden */
+      display: none; 
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-      z-index: 999; /* Ensure overlay is above other elements but below sidebar */
+      background-color: rgba(0, 0, 0, 0.5); 
+      z-index: 999; 
     }
     .overlay.active {
-      display: block; /* Show overlay when active */
+      display: block;
     }
     body.body-lock-scroll {
-      overflow: hidden; /* Lock scroll when sidebar is active */
+      overflow: hidden; 
     }
   
 
@@ -84,7 +84,7 @@ if (!isset($_SESSION['login'])) {
     <?php include "layout/header.php" ?>
      <!-- Sidebar -->
      <div class="sidebar" id="sidebar">
-      <a href="#">Profile</a>
+      <a href="EditProfil.php">Profile</a>
       <a href="Setting.php">Setting</a>
       <a href="pemilik.php">Start Selling</a>
       <a href="logout.php">Log Out</a>
@@ -108,7 +108,7 @@ if (!isset($_SESSION['login'])) {
             <div class="hs-carousel-slide">
               <div
                 class="flex justify-center h-full bg-gray-100 p-6 bg-no-repeat bg-cover bg-center dark:bg-items1"
-                style="background-image: url(./asset/carousel/items1.jpg)"
+                style="background-image: url(./asset/carousel/CT1.jpg)"
               >
                 >
               </div>
@@ -116,7 +116,7 @@ if (!isset($_SESSION['login'])) {
             <div class="hs-carousel-slide">
               <div
                 class="flex justify-center h-full bg-gray-200 bg-no-repeat bg-cover bg-bottom bg-fixed p-6 dark:bg-neutral-800"
-                style="background-image: url(./asset/carousel/items2.jpg)"
+                style="background-image: url(./asset/carousel/BD2.jpg)"
               >
                 >
               </div>
@@ -125,7 +125,7 @@ if (!isset($_SESSION['login'])) {
             <div class="hs-carousel-slide">
               <div
                 class="flex justify-center h-full bg-gray-200 bg-no-repeat bg-cover bg-center bg-fixed p-6 dark:bg-neutral-800"
-                style="background-image: url(./asset/carousel/items3.jpg)"
+                style="background-image: url(./asset/carousel/WD3.jpg)"
               >
                 >
               </div>
@@ -134,7 +134,7 @@ if (!isset($_SESSION['login'])) {
             <div class="hs-carousel-slide">
               <div
                 class="flex justify-center h-full bg-no-repeat bg-cover bg-center bg-gray-300 p-6 dark:bg-neutral-700"
-                style="background-image: url(./asset/carousel/items4.jpg)"
+                style="background-image: url(./asset/carousel/CT4.jpg)"
               ></div>
             </div>
           </div>
@@ -190,11 +190,11 @@ if (!isset($_SESSION['login'])) {
       <div class="mt-10 pb-20 flex justify-center gap-x-10 px-12">
         <div class="w-1/2 bg-primary rounded-3xl px-4 py-16">
           <h1 class="text-white font-bold text-center text-2xl mb-5">
-          Rent catering equipment
+          Rent Catering Equipment
           </h1>
           <img
             class="mx-auto"
-            src="./asset/Alat-Catering-Group-uk-image-web-768x511-1-q219nb6syyln18z1sy4kkqhjpdv9vhb9o8bgh6o9lw 1 (1).png"
+            src="./asset/icons/CT1.png"
             alt=""
           />
 
@@ -213,7 +213,7 @@ if (!isset($_SESSION['login'])) {
           </h1>
           <img
             class="mx-auto"
-            src="./asset/Alat-Catering-Group-uk-image-web-768x511-1-q219nb6syyln18z1sy4kkqhjpdv9vhb9o8bgh6o9lw 1 (1).png"
+            src="./asset/icons/WD2.png"
             alt=""
           />
 

@@ -26,7 +26,7 @@ if (!isset($_SESSION['login'])) {
             justify-content: space-between;
             background-color: #730000;
             color: white;
-            padding: 10px 20px;
+            padding: 20px 50px;
         }
         header .logo-container {
             display: flex;
@@ -46,6 +46,7 @@ if (!isset($_SESSION['login'])) {
         }
         header .profile img {
             border-radius: 50%;
+            height: 40px;
             width: 40px;
             margin-left: 10px;
         }
@@ -74,7 +75,7 @@ if (!isset($_SESSION['login'])) {
             display: flex;
             align-items: center;
             background-color: #FFF3CD;
-            padding: 16px;
+            padding: 13px;
             border-radius: 50px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-top: 30px;
@@ -135,7 +136,7 @@ if (!isset($_SESSION['login'])) {
     <header>
         <div class="logo-container">
             <img src="./asset/logo.png" alt="EventGear Logo">
-            <h1>Make Your Party Unforgettable with the Best Selection!</h1>
+            <h1>Make Your Party Unforgettable with the <br> Best Selection!</h1>
         </div>
         <div class="profile">
         <p><?php echo "Hi, " . $_SESSION['login']['nama']; ?></p>
@@ -143,13 +144,13 @@ if (!isset($_SESSION['login'])) {
         </div>
     </header>
     <nav>
-        <a href="#">Home</a>
+        <a href="index.php">Home</a>
         <a href="#">About us</a>
         <a href="#">Catalogue</a>
     </nav>
     <div class="container">
         <div class="package-header">
-            <img src="./asset/cat1.png" alt="Paket Catering">
+            <img src="./asset/icons/PKT1.png" alt="Paket Catering">
             <div class="package-details">
                 <h2>CATERING PACKAGE I</h2>
                 <p>Rp. 2.000.000</p>
