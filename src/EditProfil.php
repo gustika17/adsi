@@ -12,6 +12,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            background-color: #f7e3b5
         }
 
         section {

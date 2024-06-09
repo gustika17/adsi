@@ -90,23 +90,23 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin-left: 20px; /* Adjusted to slightly move to the right */
+            margin-left: 20px; 
         }
 
         .image-section img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            border: 5px solid white; /* Ring around the photo */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+            border: 5px solid white; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
         }
 
         .button.save {
-    margin-right: 10px; /* Tambahkan jarak ke kanan */
+    margin-right: 10px; 
 }
 
 .button.cancel {
-    margin-left: 10px; /* Tambahkan jarak ke kiri */
+    margin-left: 10px;
 }
 
     </style>
@@ -118,7 +118,7 @@
                 <h1>PROFILE</h1>
             </div>
             <form>
-                <label for="name">Nama</label>
+                <label for="name">Name</label>
                 <input type="text" id="name" name="name" value="">
 
                 <label for="email">Email</label>
