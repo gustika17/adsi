@@ -183,6 +183,7 @@ if (!isset($_SESSION['login'])) {
                 <li>COOLER BOX <span>2 BUAH</span></li>
                 <li>BAK CLEAR UP <span>4 BUAH</span></li>
                 <li>NAMPAN <span>1 LUSIN</span></li>
+                <li>SOUP TUREN LISTRIK <span>2 BUAH</span></li>
             </ul>
         </div>
     </div>
